@@ -1,0 +1,134 @@
+/* Fuente Importada */
+
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+
+/* Body y Header */
+
+body {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    background-color: lightcoral; 
+  }
+
+  header {
+      background-color: lightblue;
+      text-align: center;
+  }
+
+  span.header {
+    color: red;
+    font-family: "Zhi Mang Xing"; 
+    font-size: 250%;
+    font-weight: bold;
+    text-shadow: gray 6px 0;
+    letter-spacing: 10px;
+  }
+
+  /* NAV */
+
+    ul.nav {
+    list-style-type: none;
+    text-align: center;
+    }
+  
+    li.nav {
+    background-color: lightblue;
+    border: #D7C8B6 2px solid;
+    display: inline;
+    margin-right: 10px;
+    }
+
+    a.nav:hover {
+    background-color: rgb(228,241,33);
+    color: rgb(231,48,48);
+    }
+
+    a:hover {
+        background-color: white;
+        color: #D7C8B6
+    }
+  
+
+/* Section 1 */
+
+section.sect1 {
+    background-color: lightgoldenrodyellow;
+    font-size: 100%;
+}
+
+/* contadores dinámicos */
+
+p.reset_colour {
+    counter-reset: cuenta-colores;
+}
+
+p.colour::before {
+    content: counter(cuenta-colores)". "; ;
+    counter-increment: cuenta-colores;
+}
+
+ 
+/* Section 2 */ 
+
+section.sect2 {
+    background-color: lightsteelblue;
+    font-size: 70%;
+}
+
+table.tabla1{
+    border: 2;
+    background-color: chocolate;
+    width: 35%;
+    text-align: center;
+}
+
+p.color1:hover {
+    background-color: red;
+    color: red;
+}
+
+td.color2:hover {
+    background-color: yellow;
+    color:yellow;
+}
+
+input.color:focus {
+    border: blue solid 3px;
+    padding: 4px;
+    background-color: yellow;
+    color: blue;
+}
+
+/* Section 3 */
+
+hr.section3{
+    height: 25px;
+    border-color: red;
+    background-color: blue;
+    width: 55%;
+    margin-left: 10%;
+    margin-right: 40%;
+}
+
+/* Section 4 */
+
+section.sect4 {
+    background-color: chocolate;
+    font-size: 50%;
+}
+
+p.formas {
+    border-color: orange red yellow;
+    border-width: 20px 50px;
+    border-style: dotted solid dashed;
+    text-align: center;
+    font-size: 200%;
+    color: yellow;
+  }
+
+
+/* Footer */
+
+  footer {
+      background-color:lightslategray;
+  }
