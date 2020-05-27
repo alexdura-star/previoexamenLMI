@@ -1,22 +1,28 @@
-/* Fuente Importada */
+/* Fuente Importada de Google Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
 
 /* Body y Header */
 
-body {
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    background-color: lightcoral; 
+@media (orientation: portrait) {
+    html {
+      background-color: lightskyblue;
+    }
+  }
+  
+  @media (orientation: landscape) {
+    html {
+      background-color:lightgreen;
+    }
   }
 
   header {
-      background-color: lightblue;
+      background-color: salmon;
       text-align: center;
   }
 
   span.header {
-    color: red;
+    color:darkblue;
     font-family: "Zhi Mang Xing"; 
     font-size: 250%;
     font-weight: bold;
@@ -24,7 +30,7 @@ body {
     letter-spacing: 10px;
   }
 
-  /* NAV */
+  /* NAVEGADOR */
 
     ul.nav {
     list-style-type: none;
@@ -32,71 +38,60 @@ body {
     }
   
     li.nav {
-    background-color: lightblue;
-    border: #D7C8B6 2px solid;
+    background-color: salmon;
+    border: black 2px solid;
     display: inline;
     margin-right: 10px;
     }
 
     a.nav:hover {
     background-color: rgb(228,241,33);
-    color: rgb(231,48,48);
+    color: darkblue;
     }
 
-    a:hover {
-        background-color: white;
-        color: #D7C8B6
-    }
-  
+    /* Section 1 */
 
-/* Section 1 */
-
-section.sect1 {
-    background-color: lightgoldenrodyellow;
-    font-size: 100%;
+section.section1 {
+    background-color: lightsalmon ;
+    font-size: 75%;
 }
 
-/* contadores dinámicos */
+/* contadores dinaÂ¡micos para lista */
 
-p.reset_colour {
+p.reset_touring {
     counter-reset: cuenta-colores;
 }
 
-p.colour::before {
+p.touring::before {
     content: counter(cuenta-colores)". "; ;
     counter-increment: cuenta-colores;
 }
 
- 
 /* Section 2 */ 
 
 section.sect2 {
-    background-color: lightsteelblue;
+    background-color: lightsalmon;
     font-size: 70%;
 }
 
 table.tabla1{
     border: 2;
-    background-color: chocolate;
-    width: 35%;
+    background-color: lightskyblue;
+    width: 45%;
     text-align: center;
 }
 
-p.color1:hover {
-    background-color: red;
-    color: red;
-}
-
-td.color2:hover {
-    background-color: yellow;
-    color:yellow;
-}
-
-input.color:focus {
-    border: blue solid 3px;
-    padding: 4px;
-    background-color: yellow;
+td.caja:hover {
     color: blue;
+    border-color: blue;
+}
+
+input.respuesta:focus {
+    border-color: red solid cm;
+    border: red solid;
+    padding: 4px;
+    background-color: blue ;
+    color: white;
 }
 
 /* Section 3 */
@@ -104,26 +99,25 @@ input.color:focus {
 hr.section3{
     height: 25px;
     border-color: red;
-    background-color: blue;
+    background-color:yellow;
     width: 55%;
-    margin-left: 10%;
-    margin-right: 40%;
 }
 
 /* Section 4 */
 
 section.sect4 {
-    background-color: chocolate;
+    background-color: lightblue;
     font-size: 50%;
 }
 
 p.formas {
-    border-color: orange red yellow;
+    border-color: red green red;
     border-width: 20px 50px;
-    border-style: dotted solid dashed;
-    text-align: center;
+    border-style: dashed solid;
+    border-spacing: 8cm;
     font-size: 200%;
-    color: yellow;
+    text-align: center;
+    color: blue;
   }
 
 
